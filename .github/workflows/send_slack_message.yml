@@ -13,5 +13,4 @@ jobs:
     - uses: ramakrishna-ncompass/sample@v2.0.0
     env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-        SLACK_USERNAME: Ramakrishna 
-        SLACK_CHANNEL: Ramakrishna
+        SLACK_USERNAME: Ramakrishna
