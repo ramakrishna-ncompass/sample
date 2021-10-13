@@ -7,8 +7,9 @@ jobs:
   post_slack_message:
     runs-on: ubuntu-latest
     steps:
-    - name: Notify slack
-      uses: ramakrishna-ncompass/sample@a9af46b9eff69c5529b863e9dca4b6f33a7ee557
+    - uses: actions/checkout@v2
+    - name: Slack Notify
+      uses: rtCamp/action-slack-notify@v2.2.0
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_USERNAME: Ramakrishna
