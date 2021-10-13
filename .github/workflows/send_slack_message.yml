@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Notify slack
-      uses: ramakrishna-ncompass/sample@Update send_slack_message.yml
+      uses: ramakrishna-ncompass/sample@master
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_USERNAME: Ramakrishna
