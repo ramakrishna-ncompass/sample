@@ -7,7 +7,7 @@ jobs:
   post_slack_message:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - id: slack
     - uses: ramakrishna-ncompass/sample@026c9d7b35c3b0d9a5d2f8f446aa940e0d247866 
     env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
