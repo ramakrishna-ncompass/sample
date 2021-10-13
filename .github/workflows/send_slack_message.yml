@@ -12,3 +12,4 @@ jobs:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_USERNAME: Ramakrishna
       uses: ramakrishna-ncompass/sample@master
+      uses: actions/checkout@v2
