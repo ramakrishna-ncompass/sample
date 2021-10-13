@@ -13,5 +13,3 @@ jobs:
     env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_USERNAME: Ramakrishna
-    with:
-      args: "hello world"
