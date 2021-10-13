@@ -7,8 +7,8 @@ jobs:
   post_slack_message:
     runs-on: ubuntu-latest
     steps:
-    - id: slack
-    - uses: ramakrishna-ncompass/sample@master
-    env:
+    - name: Notify slack
+      env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_USERNAME: Ramakrishna
+      uses: ramakrishna-ncompass/sample@master
